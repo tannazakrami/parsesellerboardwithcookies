@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const start = require('./index')
 
-app.get('/', function (req, res) {
+app.get('/get', function (req, res) {
     start()
 })
 
