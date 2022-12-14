@@ -11,7 +11,7 @@ const getAccounts = async () => {
     let data = await googleSheets.spreadsheets.values.get({
         auth,
         spreadsheetId,
-        range: 'Аккаунты!A3:B28'
+        range: 'Аккаунты!A3:B'
     })
     return data.data.values || undefined
 }
